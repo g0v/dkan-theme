@@ -16,7 +16,7 @@ function dg0v_css_alter(&$css) {
  */
 function dg0v_preprocess_html(&$variables) {
   drupal_add_css('//fonts.googleapis.com/css?family=Droid+Sans:400,700|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800', array('type' => 'external'));
-  drupal_add_css('//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css', array('type' => 'external'));
+  drupal_add_css('//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css', array('type' => 'external'));
 }
 
 /**
@@ -349,4 +349,17 @@ function dg0v_file_widget($variables) {
   $output .= '</div>';
   $output .= render($hidden_elements);
   return $output;
+}
+
+/**
+ * Overrides theme_menu_link().
+ */
+function dg0v_menu_link(&$variables) {
+  $element = $variables['element'];
+  $output = l($element['#title'], $element['#href'], $element['#localized_options']);
+  if($element['#original_link']['menu_name'] == 'main-menu'){
+    $element['#attributes']['class'][] = 'icon';
+    $element['#attributes']['class'][] = preg_replace('/[^0-9a-zA-Z]/', '-', $element['#href']);
+  }
+  return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
 }

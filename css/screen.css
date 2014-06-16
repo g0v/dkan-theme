@@ -81,7 +81,7 @@ dd { margin: 0; padding: 8px 5px; float: right; width: 72%; }
 dt:nth-of-type(2n), dd:nth-of-type(2n) { background: #f3f3f3; }
 
 /* line 1, ../sass/partials/_layout.scss */
-body { font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: .8em; line-height: 1.35em; }
+body { font-family: "Helvetica Neue", Helvetica, Arial, "Heiti TC", "Apple LiGothic Medium", "Microsoft JhengHei", sans-serif; font-size: .8em; line-height: 1.35em; }
 
 /* line 6, ../sass/partials/_layout.scss */
 .node-type-resource .container { width: 100%; max-width: 980px; }
@@ -98,7 +98,7 @@ body { font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 /* line 21, ../sass/partials/_layout.scss */
 #featured { background-position: 50% 50%; background-size: cover !important; overflow: hidden; position: relative; z-index: 1; }
 /* line 27, ../sass/partials/_layout.scss */
-#featured .tint { background-color: rgba(10, 119, 189, 0.45); position: absolute; height: 900px; width: 100%; z-index: -1; }
+#featured .tint { background-color: rgba(10, 119, 189, 0.65); position: absolute; height: 900px; width: 100%; z-index: -1; }
 /* line 34, ../sass/partials/_layout.scss */
 #featured h2.block-title { display: none; }
 /* line 37, ../sass/partials/_layout.scss */
@@ -396,6 +396,11 @@ h2.block-title { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, co
 /* line 345, ../sass/partials/_block.scss */
 #block-dkan-sitewide-demo-front-dkan-demo-front .media-overlay .media-heading { background-color: rgba(0, 0, 0, 0.8); bottom: 0; color: #FFFFFF; font-size: 13px; left: 0; line-height: 18px; margin: 0 15px; padding: 12px 10px; position: absolute; right: 0; z-index: 1; }
 
+/* line 359, ../sass/partials/_block.scss */
+#block-block-1 { font-size: 1.2em; text-align: center; }
+@media (min-width: 768px) { /* line 359, ../sass/partials/_block.scss */
+  #block-block-1 { font-size: 1.5em; } }
+
 /* line 7, ../sass/partials/_form.scss */
 input, textarea, select, .input-prepend .add-on, .input-append .add-on, .uneditable-input, .slick-header-column.ui-state-default { height: auto; }
 
@@ -538,62 +543,72 @@ table.field-multiple-table th label { padding-left: 6px; }
 /* line 53, ../sass/partials/_navigation.scss */
 #nav-wrapper .navbar-default .navbar-nav li > a:hover, #nav-wrapper .navbar-default .navbar-nav li > a:focus { text-decoration: underline; }
 /* line 57, ../sass/partials/_navigation.scss */
-#nav-wrapper .navbar-default .navbar-nav .active a { background: transparent; }
+#nav-wrapper .navbar-default .navbar-nav li.icon > a:before { font-family: FontAwesome; margin-right: 4px; }
 /* line 61, ../sass/partials/_navigation.scss */
+#nav-wrapper .navbar-default .navbar-nav .node-add-dataset > a:before { content: "\f067"; }
+/* line 64, ../sass/partials/_navigation.scss */
+#nav-wrapper .navbar-default .navbar-nav .dataset > a:before { content: "\f002"; }
+/* line 67, ../sass/partials/_navigation.scss */
+#nav-wrapper .navbar-default .navbar-nav .groups > a:before { content: "\f0c0"; }
+/* line 70, ../sass/partials/_navigation.scss */
+#nav-wrapper .navbar-default .navbar-nav .node-1 > a:before { content: "\f129"; }
+/* line 73, ../sass/partials/_navigation.scss */
+#nav-wrapper .navbar-default .navbar-nav .active a { background: transparent; }
+/* line 77, ../sass/partials/_navigation.scss */
 #nav-wrapper .navbar-default .navbar-nav.secondary li { float: none; }
-/* line 63, ../sass/partials/_navigation.scss */
+/* line 79, ../sass/partials/_navigation.scss */
 #nav-wrapper .navbar-default .navbar-nav.secondary li a { font-size: .7em; line-height: 1.5em; padding: 4px; }
 
-/* line 72, ../sass/partials/_navigation.scss */
+/* line 88, ../sass/partials/_navigation.scss */
 .navbar .nav > li > a { text-shadow: none; }
 
-/* line 76, ../sass/partials/_navigation.scss */
+/* line 92, ../sass/partials/_navigation.scss */
 .tabs--primary { margin: 10px 0; }
-/* line 78, ../sass/partials/_navigation.scss */
+/* line 94, ../sass/partials/_navigation.scss */
 .tabs--primary li { margin: 1px; }
-/* line 81, ../sass/partials/_navigation.scss */
+/* line 97, ../sass/partials/_navigation.scss */
 .tabs--primary li a { background: white; border: 1px solid #cccccc; padding: 5px 15px; }
-/* line 85, ../sass/partials/_navigation.scss */
+/* line 101, ../sass/partials/_navigation.scss */
 .tabs--primary li a:hover { border: 1px solid #d3ae7e; background: #d3ae7e; color: white; }
-/* line 90, ../sass/partials/_navigation.scss */
+/* line 106, ../sass/partials/_navigation.scss */
 .tabs--primary li a.active { border: 1px solid #0a77bd; background: #0a77bd; color: white; }
 
-/* line 99, ../sass/partials/_navigation.scss */
+/* line 115, ../sass/partials/_navigation.scss */
 .nav-tabs li a { color: #0a77bd; }
-/* line 101, ../sass/partials/_navigation.scss */
+/* line 117, ../sass/partials/_navigation.scss */
 .nav-tabs li a:hover { color: #07598d; }
 
-/* line 110, ../sass/partials/_navigation.scss */
+/* line 126, ../sass/partials/_navigation.scss */
 .nav-pills li a.active, .nav-pills li.active a:hover, .nav-pills li.active a:focus, .tabs--primary li a.active { border: 1px solid #0a77bd; background: #0a77bd; color: #ffffff; }
 
-/* line 115, ../sass/partials/_navigation.scss */
+/* line 131, ../sass/partials/_navigation.scss */
 .btn-primary { background: #0a77bd; border-color: #0a77bd; }
 
-/* line 122, ../sass/partials/_navigation.scss */
+/* line 138, ../sass/partials/_navigation.scss */
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active { background: #d3ae7e; border-color: #d3ae7e; }
 
-/* line 128, ../sass/partials/_navigation.scss */
+/* line 144, ../sass/partials/_navigation.scss */
 #edit-submit:hover, #edit-submit:focus, #edit-submit:active { background: #053a5c; border-color: #053a5c; color: #fff; }
 
-/* line 134, ../sass/partials/_navigation.scss */
+/* line 150, ../sass/partials/_navigation.scss */
 a.embed-link { -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; background: #0a77bd; color: #fff; display: inline-block; padding: 5px 15px 5px 30px; position: relative; margin: 1em 0; text-decoration: none; }
 
-/* line 146, ../sass/partials/_navigation.scss */
+/* line 162, ../sass/partials/_navigation.scss */
 a.embed-link:hover, a.embed-link:focus, a.embed-link:active { background: #d3ae7e; color: #fff; text-decoration: none; }
 
-/* line 151, ../sass/partials/_navigation.scss */
+/* line 167, ../sass/partials/_navigation.scss */
 a.embed-link:before { content: '\f121'; color: #fff; font-family: "FontAwesome"; font-size: 1.3em; position: absolute; top: 5px; left: 10px; }
 
-/* line 160, ../sass/partials/_navigation.scss */
+/* line 176, ../sass/partials/_navigation.scss */
 textarea.embed-code { width: 100%; margin-bottom: 1em; }
 
-/* line 165, ../sass/partials/_navigation.scss */
+/* line 181, ../sass/partials/_navigation.scss */
 ul.action-links { margin: 1em 0; }
 
-/* line 168, ../sass/partials/_navigation.scss */
+/* line 184, ../sass/partials/_navigation.scss */
 .data-explorer .btn { border: 1px solid #cccccc; }
 
-/* line 172, ../sass/partials/_navigation.scss */
+/* line 188, ../sass/partials/_navigation.scss */
 .btn:active, .btn.active { -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; }
 
 /* line 1, ../sass/partials/_view.scss */
@@ -788,4 +803,12 @@ ul.action-links { margin: 1em 0; }
   /* line 13, ../sass/partials/_responsive.scss */
   #data-and-resources ul.resource-list li { margin: .5em 0; min-height: 40px; padding: 0 125px 0 40px; position: relative; }
   /* line 18, ../sass/partials/_responsive.scss */
-  #data-and-resources ul.resource-list li a.btn { margin-top: 0; position: absolute; top: 0; right: 10px; } }
+  #data-and-resources ul.resource-list li a.btn { margin-top: 0; position: absolute; top: 0; right: 10px; }
+  /* line 26, ../sass/partials/_responsive.scss */
+  #block-block-1 { margin-top: 35px; } }
+@media (max-width: 768px) { /* line 31, ../sass/partials/_responsive.scss */
+  #nav-wrapper .navbar-default .logo { width: 70%; }
+  /* line 32, ../sass/partials/_responsive.scss */
+  #nav-wrapper .navbar-default .logo img { width: 70%; height: 70%; }
+  /* line 38, ../sass/partials/_responsive.scss */
+  .front .featured-inside section { text-align: center; } }

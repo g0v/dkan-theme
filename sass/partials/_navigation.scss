@@ -54,6 +54,22 @@
 			    	text-decoration:underline;
 			    }
 			}
+      li.icon > a:before {
+        font-family: FontAwesome;
+        margin-right: 4px;
+      }
+      .node-add-dataset > a:before {
+        content:"\f067";
+      }
+      .dataset > a:before {
+        content:"\f002";
+      }
+      .groups > a:before {
+        content:"\f0c0";
+      }
+      .node-1 > a:before {
+        content:"\f129";
+      }
 			.active a {
 				background:transparent;
 			}
