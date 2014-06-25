@@ -24,7 +24,7 @@
     }
   }
   #block-block-1 {
-    margin-top: 35px;
+    margin-top: 70px;
   }
 }
 @media(max-width:768px){
@@ -37,5 +37,24 @@
   }
   .front .featured-inside section {
     text-align: center;
+  }
+  .front #block-views-popular-tags-block {
+    width: 400px;
+  }
+  .front #block-dkan-sitewide-demo-front-dkan-search-front {
+    width: 400px;
+    #views-exposed-form-dataset-page input.form-control {
+      width: 310px;
+    }
+  }
+  .front .view-popular-tags .tag-list li {
+    margin-right: 10px;
+  }
+  .front #featured .featured-inside {
+    min-height: 200px;
+  }
+  #featured {
+    background-size: auto !important;
+    
   }
 }

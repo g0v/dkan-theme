@@ -12,11 +12,6 @@ h2.block-title {
 	
 }
 
-#featured .tint,
-#block-dkan-sitewide-demo-front-dkan-demo-front {
-  background-color: @tint;
-}
-
 .form-actions {
   background-color: @bg;
 }

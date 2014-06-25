@@ -212,3 +212,20 @@ table.field-multiple-table th label {
     background:$brand-secondary;
   }
 }
+
+.node-form {
+  .form-item-body-und-0-format label{
+    margin-top: 0;
+    float: left;
+  }
+  .filter-help {
+    p{
+      margin: 0;
+    }
+    margin: 0;
+  }
+  .filter-list.form-select {
+    width: 300px !important;
+    margin-left: 20px;
+  }
+}

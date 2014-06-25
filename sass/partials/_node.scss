@@ -231,3 +231,14 @@
 //   font-size: 1.35em;
 //   padding: 0.5em 0.6em;
 // }
+.node .content {
+  h2 {
+    font-size: 1.3em;
+  }
+  h3 {
+    font-size: 1.1em;
+  }
+  h1,h2,h3,h4,h5,h6 {
+    margin-bottom: 0.5em;
+  }
+}

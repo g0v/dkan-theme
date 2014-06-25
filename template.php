@@ -363,3 +363,6 @@ function dg0v_menu_link(&$variables) {
   }
   return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
 }
+
+function dg0v_preprocess_field(&$vars) {
+}
